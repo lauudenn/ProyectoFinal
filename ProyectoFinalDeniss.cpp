@@ -125,7 +125,66 @@ int main()
 				}		
 			}
 		}while(op!=1);
-		system("cls");	
+		system("cls");
+		system("cls");		
+		cout<<"Iniciando el juego..."<<endl;
+		cout<<"Elige las respuestas que te parezcan correctas"<<endl;
+		system("pause");
+		system("cls");
+		cout<<"Has despertado en una casa desconocida sin ninguna pertenencia contigo \nNi celular ni dinero, absolutamente nada..."<<endl;
+		system("pause");
+		do{	
+		system("cls");
+		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
+		cout<<"a) Pedir ayuda \nb) Revisar que no haya nadie en la casa \nc) Intentar salir \nd) Despertar(opcion para salir del juego)"<<endl;
+		cin>> desA;	
+		switch(desA){
+	 	while(desA!='a', 'b', 'c', 'd'){	
+		
+			case 'a':{
+				system("cls");
+				cout<<"Has perdido una vida  \n¡Mal! Esta mal pedir ayuda si desconoces quienes estan en ese lugar, ¿y si tienen la intencion de lastimarte?..."<<endl;
+				system("pause");
+				cout<<"Alguien se esta acercando hacia a ti..."<<endl;
+				system("pause");			
+				break;			
+			}
+			case 'b':{
+				system("cls");
+				cout<<"No has perdido ninguna vida \n¡Bien! Lo correcto es analizar tu alrededor porque al final no sabes a que o quienes te enfrentas..."<<endl;
+				system("pause");
+				cout<<"Al estar visualizando notas que hay una persona cerca de donde estas, no parece amigable..."<<endl;
+				system("pause");
+				break;
+			}
+			case 'c':{
+				system("cls");
+				cout<<"Has perdido una vida \n¡Mal! Es impudente intentar salir sin saber que hay afuera o si hay alguna trampa cerca e gual si siquiera hay una salida..."<<endl;
+				system("pause");
+				cout<<"Al intentar salir te das cuenta que todas las salidas estan cerradas y descuidadamente generas un ruido que provoca la reaccion de las personas que se encuentran en el lugar..."<<endl;
+				system("pause");
+				break;
+			}
+			case 'd':{
+				system("cls");
+				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+				return 0;
+				system("pause");
+				break;
+				default:{
+					system("cls");
+					cout<<"Error, esa no es una opcion, inicia de nuevo TuT "<<endl;
+					system("pause");
+					break;
+				}
+			}
+		}
+	}
+	break;
+	system("cls");
+	}while(desA!='a', 'b', 'c', 'd');	
 		return 0;
 		
 	}
