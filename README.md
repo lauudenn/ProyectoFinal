@@ -1,2 +1,5 @@
 # ProyectoFinal
-Proyecto final historia interactiva  en c++ con el profesor Candelario, y proyecto profesor Aaron.
+PROYECTO
+Repositorio centralizado en GitHub
+Mendoza Velasco Laura Deniss
+Grupo: 1158
