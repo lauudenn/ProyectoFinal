@@ -741,5 +741,64 @@ int main()
 	}
 	system("cls");
 	}
+	if(desD=='b' || 'c'){
+		if(vidas==0){
+			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
+			system("pause");
+			cout<<"El juego a terminado."<<endl;
+			system("pause");
+			return 0;			
+		}
+		system("cls");
+		cout<<"¿Que haras?..."<< vidas-1 <<" vidas restantes "<<endl;
+		cout<<"a) Forcejear \nb) Quedarte quieto \nc) Darle una patada en su zona sensible \nd) Despertar(opcion para salir del juego"<<endl;
+		cin>> desE;
+		switch(desE){
+			while(desE!='a', 'b', 'c', 'd'){
+			case 'a':{
+				system("cls");
+				cout<<"HAS LOGRADO ESCAPAR DE LA CASA!!"<<endl;
+				system("pause");
+				cout<<"FELICIDADES HAS LOGRADO ESCAPAR CON VIDA"<<endl;
+				system("pause");
+				break;
+			}
+			case 'b':{
+				system("cls");
+				cout<<"TE HAN ENCONTRADO Y TE HAN ASESINADO!!"<<endl;
+				system("pause");
+				cout<<"PUEDES VOLVER A INTENTARLO, SUERTE PARA LA PROXIMA"<<endl;
+				system("pause");
+				break;
+			}
+			case 'c':{
+				system("cls");
+				cout<<"TE HAN ENCONTRADO ESCONDIDO/A Y TE HAN DADO PLOMO XD"<<endl;
+				system("pause");
+				cout<<"PUEDES VOLVER A INTENTARLO, SUERTE PARA LA PROXIMA.):"<<endl;
+				system("pause");
+				break;
+			}
+			case 'd':{
+				system("cls");
+				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
+				return 0;
+				system("pause");
+				break;
+				default:{
+					cout<<"Error, esa no es una opcion, inicia de nuevo TuT "<<endl;
+					system("pause");
+					break;
+				}
+			}
+		}
+	}
+	system("cls");
+	}
+	cout<<("Fin del juego. ")<<endl;
+	
 	return 0;
-}
+ }
