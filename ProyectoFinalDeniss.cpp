@@ -627,5 +627,119 @@ int main()
 	}
 	system("cls");
 	}
+	if(desC=='c'){
+		if(vidas==0){
+			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
+			system("pause");
+			cout<<"El juego a terminado."<<endl;
+			system("pause");
+			return 0;			
+		}
+		system("cls");
+		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
+		cout<<"a) Correr  \nb) Enfrentarlo \nc) Uy kieto \nd) Despertar(opcion para salir del juego"<<endl;
+		cin>> desD;
+		switch(desD){
+			while(desD!='a', 'b', 'c', 'd'){
+			case 'a':{
+				system("cls");
+				cout<<" No has perdido ninguna vida \n¡Bien! Si te han encontrado la mejor opcion es correr para evitar ser lastimado/a."<<endl;
+				system("pause");
+				cout<<"Mientras corrias pudiste ver que en la cochera de la casa hay una puerta semiabierta la cual lleva a la salida...): "<<endl;
+				system("pause");
+				break;
+			}
+			case 'b':{
+				system("cls");
+				cout<<"Has perdido una vida \n¡Mal! Es peligroso enfrentarte ante alguien que no sabes si puede llegar a traer un arma o si tiene la intencion de hacerte daño."<<endl;
+				system("pause");
+				cout<<"Al momento de enfrentarlo el hombre saca una pistola y te apunta. :0"<<endl;
+				system("pause");
+				break;
+			}
+			case 'c':{
+				system("cls");
+				cout<<"Has perdido una vida \n¡Mal! Quedarte quieto/a cuando te atrapan o estas en peligro por obvias razones no es la opcion correcta.-_-"<<endl;
+				system("pause");
+				cout<<"El hormre saca su arma y te apunta..:)."<<endl;
+				system("pause");
+				break;
+			}
+			case 'd':{
+				system("cls");
+				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
+				return 0;
+				system("pause");
+				break;
+				default:{
+					cout<<"Error, esa no es una opcion, inicia de nuevo TuT "<<endl;
+					system("pause");
+					break;
+				}
+			}
+		}
+	}
+	system("cls");
+	}
+	if(desD=='a'){
+		if(vidas==0){
+			cout<<"Te has quedado sin vidas, has muerto..."<<endl;
+			system("pause");
+			cout<<"El juego a terminado."<<endl;
+			system("pause");
+			return 0;			
+		}
+		system("cls");
+		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
+		cout<<"a) Salir por la puerta \nb) Quedarte \nc) Esconderte \nd) Despertar(opcion para salir del juego"<<endl;
+		cin>> desE;
+		switch(desE){
+			while(desE!='a', 'b', 'c', 'd'){
+			case 'a':{
+				system("cls");
+				cout<<"HAS LOGRADO ESCAPAR DE LA CASA!!"<<endl;
+				system("pause");
+				cout<<"FELICIDADES HAS LOGRADO ESCAPAR CON VIDA"<<endl;
+				system("pause");
+				break;
+			}
+			case 'b':{
+				system("cls");
+				cout<<"TE HAN ENCONTRADO Y TE HAN ASESINADO!!"<<endl;
+				system("pause");
+				cout<<"PUEDES VOLVER A INTENTARLO, SUERTE PARA LA PROXIMA"<<endl;
+				system("pause");
+				break;
+			}
+			case 'c':{
+				system("cls");
+				cout<<"TE HAN ENCONTRADO ESCONDIDO/A Y TE HAN DADO PLOMO XD"<<endl;
+				system("pause");
+				cout<<"PUEDES VOLVER A INTENTARLO, SUERTE PARA LA PROXIMA.):"<<endl;
+				system("pause");
+				break;
+			}
+			case 'd':{
+				system("cls");
+				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
+				return 0;
+				system("pause");
+				break;
+				default:{
+					cout<<"Error, esa no es una opcion, inicia de nuevo TuT "<<endl;
+					system("pause");
+					break;
+				}
+			}
+		}
+	}
+	system("cls");
+	}
 	return 0;
 }
