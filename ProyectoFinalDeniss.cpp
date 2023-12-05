@@ -234,6 +234,57 @@ int main()
 		}
 	}
 	system("cls");		
-	}	return 0;
-		
+	}	
+	if(desA=='b'){
+		system("cls");
+		cout<<"¿Que haras?..."<< vidas <<" vidas restantes "<<endl;
+		cout<<"a) Esconderte \nb) Correr \nc) Esperar \nd) Despertar(opcion para salir del juego"<<endl;
+		cin>> desB;
+		switch(desB){
+		while(desB!='a', 'b', 'c', 'd'){
+			case 'a':{
+				system("cls");
+				cout<<" No has perdido ninguna vida \n¡Bien! por el momento es mejor esconderte y visualizar tu alrededor, no hace falta actuar imprudentemente."<<endl;
+				system("pause");
+				cout<<"Mientras estas escondido/a pasa un tipo rondando cerca de donde estas, al parecer tiene algo en su mano, es... ¿UN ARMA?!! "<<endl;
+				system("pause");
+				break;
+			}
+			case 'b':{
+				system("cls");
+				cout<<"Has perdido una vida \n¡Mal! Es peligroso correr por un lugar que no conoces y mas si no hay alguna salida o hay alguien que te pueda ver y atrapar."<<endl;
+				system("pause");
+				cout<<"Mientras corrias una persona te observo y comenzo a perseguirte. :0"<<endl;
+				system("pause");
+				break;
+			}
+			case 'c':{
+				system("cls");
+				cout<<"Has perdido una vida \n¡Mal! Puede ser una buena opcion si es que no tuvieramos en cuenta \nque nuestra vida corre peligro y esperar le daria la oportunidad a personas con malas intenciones a atacarnos."<<endl;
+				system("pause");
+				cout<<"Mientras te quedas esperando un tipo de ve desde lejos y se comienza a acercar a ti...(esto pinta mal)."<<endl;
+				system("pause");
+				break;
+			}
+			case 'd':{
+				system("cls");
+				cout<<"Has despertado, todo se acabo..."<<endl;
+				system("pause");
+				cout<<"Has salido del juego vuelve pronto :)"<<endl;
+
+				return 0;
+				system("pause");
+				break;
+				default:{
+					cout<<"Error, esa no es una opcion, inicia de nuevo TuT "<<endl;
+					system("pause");
+					break;
+				}
+			}
+		}
+	}
+	system("cls");		
+	}
+	return 0;
+	
 	}
