@@ -1,6 +1,9 @@
 #include <iostream>
+
 #include <stdlib.h>
+
 using namespace std;
+
 int main()
 {
 	int vidas=5;
@@ -8,7 +11,6 @@ int main()
 	char desA, desB, desC, desD, desE, desBa, desBb, desBc;
 		
 	do{
-
 		system("cls");
 		cout<<"JUEGO DE ESCAPE"<<endl;
 		cout<<"Elige una opcion del menu principal:"<<endl;
@@ -25,9 +27,9 @@ int main()
 			break;
 			case 2:{	
 				system("cls");
-				cout<<"Has despertado en un lugar desconocido y sin ninguna pertenencia..."<<endl;
+				cout<<"Has despertado en un lugar desconocido y sin ninguna pertenencia contigo..."<<endl;
 				cout<<"Puedes observar que hay un contador con 5 corazones los cuales representan las vidas y oportunidades que tienes para fallar al tomar decisiones..."<<endl;
-				cout<<"El objetivo es escapar..."<<endl;
+				cout<<"El objetivo es escapar vivo de este lugar..."<<endl;
 				system("pause");
 				break;
 			}
@@ -119,7 +121,7 @@ int main()
 			break;
 			default:{
 					system("cls");
-					cout<<"Error elige una de las opciones que se muetran"<<endl;
+					cout<<"Error elige una de las opciones que se muestran"<<endl;
 					system("pause");
 					break;
 				}		
